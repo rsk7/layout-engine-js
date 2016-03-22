@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel -d lib/ src/",
-    "test": "./node_modules/.bin/mocha --compilers js:babel-register",
-    "debug-test": "./node_modules/.bin/mocha --compilers js:babel-register --debug-brk",
+    "build": "babel -d lib/ src/",
+    "test": "mocha --compilers js:babel-register",
+    "debug-test": "mocha --compilers js:babel-register --debug-brk",
     "prepublish": "npm run build"
   },
   "author": "rsk7",
